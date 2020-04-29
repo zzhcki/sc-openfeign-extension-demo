@@ -12,6 +12,12 @@
 	<groupId>com.zrq</groupId>
 	<artifactId>sc-openfeign-extension-demo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>extension-spring-aop</module>
+		<module>extension-jdk-proxy</module>
+	</modules>
 
 	<description>博客中描述的openfeign扩展的具体实现</description>
 

@@ -11,6 +11,7 @@
 	<artifactId>extension-spring-aop</artifactId>
 	<version>${project.version}</version>
 	<description>使用Spring Aop进行扩展示例</description>
+	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>

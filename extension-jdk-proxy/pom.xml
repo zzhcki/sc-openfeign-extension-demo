@@ -12,6 +12,7 @@
 	<artifactId>extension-jdk-proxy</artifactId>
 	<version>1.0.0</version>
 	<description>使用jdk的动态代理进行扩展示例</description>
+	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
