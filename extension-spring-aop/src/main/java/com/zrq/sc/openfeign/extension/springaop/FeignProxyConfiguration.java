@@ -1,4 +1,4 @@
-package com.zrq.sc.openfeign.extension;
+package com.zrq.sc.openfeign.extension.springaop;
 
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Bean;

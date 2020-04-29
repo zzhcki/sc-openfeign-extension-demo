@@ -1,4 +1,4 @@
-package com.zrq.sc.openfeign.extension;
+package com.zrq.sc.openfeign.extension.springaop;
 
 import org.springframework.aop.support.StaticMethodMatcherPointcut;
 import org.springframework.cloud.openfeign.FeignClient;

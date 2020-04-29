@@ -1,4 +1,4 @@
-package com.zrq.sc.openfeign.extension;
+package com.zrq.sc.openfeign.extension.springaop;
 
 import org.springframework.context.annotation.AdviceMode;
 import org.springframework.context.annotation.AdviceModeImportSelector;

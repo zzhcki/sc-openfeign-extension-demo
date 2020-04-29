@@ -1,4 +1,4 @@
-package com.zrq.sc.openfeign.extension;
+package com.zrq.sc.openfeign.extension.jdk;
 
 import feign.Target;
 import org.springframework.cloud.openfeign.FeignContext;

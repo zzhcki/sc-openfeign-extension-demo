@@ -1,4 +1,4 @@
-package com.zrq.sc.openfeign.extension;
+package com.zrq.sc.openfeign.extension.jdk;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanClassLoaderAware;
