@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.zrq.sc.openfeign.extension.FeignProxyAutoConfiguration
