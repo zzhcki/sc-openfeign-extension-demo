@@ -1,25 +1,16 @@
 package com.zrq.sc.openfeign.extension.springaop;
 
-import org.springframework.aop.support.StaticMethodMatcherPointcut;
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.util.ClassUtils;
+import org.springframework.aop.support.annotation.AnnotationMatchingPointcut;
 
-import java.lang.reflect.Method;
+import java.lang.annotation.Annotation;
 
 /**
  * @author <a href="mailto:zzhcki@gmail.com">zhangruiquan</a>
  */
-public class FeignProxyPointcut extends StaticMethodMatcherPointcut {
+public class FeignProxyPointcut extends AnnotationMatchingPointcut {
 
-    @Override
-    public boolean matches(Method method, Class<?> aClass) {
-        Class<?> targetClass = ClassUtils.getUserClass(aClass);
-        FeignClient feignClient = AnnotationUtils.findAnnotation(targetClass, FeignClient.class);
-        if (feignClient != null) {
-            return true;
-        }
-        return false;
+    public FeignProxyPointcut(Class<? extends Annotation> classAnnotationType) {
+        super(classAnnotationType, true);
     }
 
 }
