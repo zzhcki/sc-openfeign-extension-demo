@@ -27,7 +27,7 @@ public class TargeterBeanPostProcessor implements BeanPostProcessor, BeanClassLo
             if (targeterClass.isAssignableFrom(beanActualClass)) {
                 return Proxy.newProxyInstance(
                         beanClassLoader,
-                        new Class[]{beanActualClass},
+                        new Class[]{targeterClass},
                         new TargeterInvocationHandler(bean, beanName, beanActualClass));
             }
         }
