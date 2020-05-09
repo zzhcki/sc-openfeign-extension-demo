@@ -29,6 +29,8 @@ public class BizInvocationHandler implements InvocationHandler {
         Object result = null;
         if (condition()) {
             //  todo something
+            // remove it
+            System.out.println("complete proxy" + "method: " + method.toString());
         } else {
             result = defaultInvocationHandler.invoke(proxy, method, args);
         }
